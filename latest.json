@@ -1,0 +1,7 @@
+{
+  "version": "2.6.0",
+  "name": "v2.6.0",
+  "released_at": "2026-08-10T02:35:09Z",
+  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.6.0",
+  "notes": "v2.6.0\r\n1.支持配置LLM（支持OpenAI兼容接口，比如DeepSeek、通义、Kimi等提供api_key的模型\r\n2.配置LLM后允许使用智能导入，大模型将分析该文件并尝试将其内容（需求）导入本程序（仅支持新建项目）\r\n3.导入和导出格式更新以支持主需求+子需求数据结构\r\n4.导入UI修改\r\n5.一些UI上的调整\r\n6.设置中增加了一些配置项\r\n7.图标统一替换为Pixelarticons集\r\n8.一些bug修复"
+}
