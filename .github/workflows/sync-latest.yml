@@ -1,0 +1,42 @@
+name: Sync latest.json
+
+# 触发条件：在【本发布仓库】发布一个新的 Release 时
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 发布仓库
+        uses: actions/checkout@v4
+
+      - name: 生成并提交 latest.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          LATEST_JSON=$(gh release view --json tagName,name,publishedAt,url,body)
+          VERSION_TAG=$(echo "$LATEST_JSON" | jq -r '.tagName' | sed 's/^v//')
+          NAME=$(echo "$LATEST_JSON" | jq -r '.name')
+          PUBLISHED_AT=$(echo "$LATEST_JSON" | jq -r '.publishedAt')
+          URL=$(echo "$LATEST_JSON" | jq -r '.url')
+          BODY=$(echo "$LATEST_JSON" | jq -r '.body')
+          jq -n \
+            --arg version "$VERSION_TAG" \
+            --arg name "$NAME" \
+            --arg released_at "$PUBLISHED_AT" \
+            --arg release_url "$URL" \
+            --arg notes "$BODY" \
+            '{version:$version, name:$name, released_at:$released_at, release_url:$release_url, notes:$notes}' \
+            > latest.json
+          echo "生成完毕："; cat latest.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add latest.json
+          git commit -m "chore: sync latest.json for ${VERSION_TAG}" || echo "无变更，跳过提交"
+          git push
