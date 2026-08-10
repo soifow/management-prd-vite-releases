@@ -1,9 +1,10 @@
 name: Sync latest.json
 
-# 触发条件：在【本发布仓库】发布一个新的 Release 时
+# 触发条件：发布 Release 时自动触发；workflow_dispatch 允许手动补跑
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions:
   contents: write
