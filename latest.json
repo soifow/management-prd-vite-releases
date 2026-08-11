@@ -1,7 +1,7 @@
 {
-  "version": "2.7.0",
-  "name": "v2.7.0",
-  "released_at": "2026-08-10T06:55:39Z",
-  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.7.0",
-  "notes": "1.代码库和release库分开管理，代码库改为私有\r\n2.增加了启动时新版本检测，在设置中增加了对应项允许用户关闭启动时的更新检查\r\n3.关于界面中增加了手动检查版本更新的入口\r\n4.部分UI微调"
+  "version": "2.7.1",
+  "name": "v2.7.1",
+  "released_at": "2026-08-11T02:57:18Z",
+  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.7.1",
+  "notes": "1.冷启动「发现新版本」通知由不自动关闭改为 15 秒后自动关闭；关于弹窗中版本检测按钮样式修改\r\n2.智能导入失败记录LLM调试日志，前端可查看原始请求与响应\r\n3.智能导入失败的调试抽屉允许复制日志，方便调试"
 }
