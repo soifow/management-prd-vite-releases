@@ -1,7 +1,7 @@
 {
-  "version": "2.8.1",
-  "name": "v2.8.1",
-  "released_at": "2026-08-12T01:42:47Z",
-  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/2.8.1",
-  "notes": "1.智能导入改用 LLM 流式调用，尽量降低导入失败的几率\r\n2.智能导入时支持硬取消与实时调试，修改了智能导入时进度条的算法\r\n3.智能导入的日志位置迁移到单独的子目录中\r\n4.设置中部分文案调整\r\n5.设置中增加需求列表/bug列表聚合展开控制开关：只展开第一个聚合项/所有聚合项都展开\r\n6.bug修复"
+  "version": "2.9.0",
+  "name": "v2.9.0",
+  "released_at": "2026-08-13T06:25:38Z",
+  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.9.0",
+  "notes": "1.需求详情&bug详情的头部控件值修改后自动保存（功能、状态等）\r\n2.需求详情&bug详情的详细内容支持自动保存\r\n3.设置中增加了是否打开自动保存以及保存的间隔时间\r\n4.bug修复"
 }
