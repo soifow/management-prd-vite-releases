@@ -1,7 +1,7 @@
 {
-  "version": "2.9.0",
-  "name": "v2.9.0",
-  "released_at": "2026-08-13T06:25:38Z",
-  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.9.0",
-  "notes": "1.需求详情&bug详情的头部控件值修改后自动保存（功能、状态等）\r\n2.需求详情&bug详情的详细内容支持自动保存\r\n3.设置中增加了是否打开自动保存以及保存的间隔时间\r\n4.bug修复"
+  "version": "2.9.1",
+  "name": "v2.9.1",
+  "released_at": "2026-08-13T07:22:14Z",
+  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.9.1",
+  "notes": "1.Bug级别标签颜色修改\r\n2.需求详情/bug详情头部区域UI调整\r\n3.Bug修复"
 }
