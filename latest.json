@@ -1,7 +1,7 @@
 {
-  "version": "2.9.1",
-  "name": "v2.9.1",
-  "released_at": "2026-08-13T07:22:14Z",
-  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.9.1",
-  "notes": "1.Bug级别标签颜色修改\r\n2.需求详情/bug详情头部区域UI调整\r\n3.Bug修复"
+  "version": "2.9.2",
+  "name": "v2.9.2",
+  "released_at": "2026-08-31T03:09:02Z",
+  "release_url": "https://github.com/soifow/management-prd-vite-releases/releases/tag/v2.9.2",
+  "notes": "1.程序将记住上一次关闭时的位置\r\n2.修复了一些bug"
 }
